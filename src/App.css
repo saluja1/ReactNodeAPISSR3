@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.site-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #f2f2f2;
+}
+
+.site-heading h1 {
+	margin: 0 0 15px;
+}
+
+.site-inner {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.site-filters {
+	width: 235px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	height: calc(100vh - 27px);
+	overflow-x: auto;
+}
+
+.site-filters h2 {
+	margin: 0 0 5px;
+}
+
+.site-filters span {
+	display: block;
+	color: #000000;
+	margin: 0 0 10px;
+	text-align: center;
+	border-bottom: 1px solid #d6d4d3;
+}
+
+.site-filters .filter-col span {
+	display: inline-block;
+	padding: 5px;
+	cursor: pointer;
+	color: #000000;
+	min-width: 65px;
+	margin: 0 0 15px;
+	border-radius: 5px;
+	text-decoration: none;
+	background-color: #c5e09b;
+	text-transform: capitalize;
+}
+
+.site-filters .filter-col span:hover,
+.site-filters .filter-col span.active {
+	background-color: #7cba01;
+	color: #000000;
+}
+
+.filter-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 10px;
+	margin: 0 0 15px;
+}
+
+.filter-col {
+	text-align: center;
+	width: 50%;
+}
+
+.site-data {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-auto-rows: min-content;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	padding: 0 0 0 15px;
+	width: calc(100% - 235px);
+}
+
+.data-col {
+	color: #717196;
+}
+
+.data-inner {
+	height: 100%;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+.data-image img {
+	width: 100%;
+}
+
+.data-image {
+	background-color: #f2f2f2;
+	margin: 0 0 15px;
+}
+
+.data-name {
+	font-weight: 600;
+}
+
+.data-value {
+	padding: 5px 0;
+}
+
+.data-value strong {
+	color: #000000;
+}
+
+.data-mission-list {
+	margin: 5px 0 0 0;
+	padding: 0 15px;
+}
+
+.site-credit {
+	margin: 25px 0 0 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.site-data {
+		grid-template-columns: auto auto auto;
+	}
+}
+
+@media screen and (max-width: 699px) {
+	.site-data {
+		grid-template-columns: auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.site-data {
+		width: 100%;
+		padding: 0;
+		margin: 20px 0 0 0;
+		justify-content: center;
+	}
+
+	.site-inner {
+		justify-content: center;
+	}
+
+	.data-col {
+		padding: 0;
+		max-width: 235px;
+	}
+}
